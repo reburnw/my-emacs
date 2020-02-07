@@ -1,0 +1,6 @@
+(setq make-backup-files nil)
+(setq line-number-mode t)
+(global-linum-mode t)
+(add-to-list 'load-path "/home/ubuntu/.emacs.d/custom")
+(require 'nginx-mode)
+(add-to-list 'auto-mode-alist '("/nginx/sites-\\(?:available\\|enabled\\)/" . nginx-mode))
